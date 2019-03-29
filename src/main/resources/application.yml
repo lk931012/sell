@@ -1,0 +1,24 @@
+#数据连接,
+#驱动是6.0以上的写法,url中需要指定时区serverTimezone
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sell?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Hongkong
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    #redis配置
+  redis:
+    port: 6379
+    host: 127.0.0.1
+
+#服务器访问路径前缀
+#server:
+#  servlet:
+#    context-path: /sell
+
+#微信参数配置
+weicat:
+  mpAppID: wxeeed55c6f44f1218
+  mpSecret: 3f9a36a5a4162fb885fa74e44565eaf3
